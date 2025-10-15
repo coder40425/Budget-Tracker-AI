@@ -8,25 +8,24 @@ const Footer = () => {
 
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mb-8'>
+
           {/* Logo and Tagline */}
-          <div className='text-center md:text-left'>
-            <div className='inline-flex items-center gap-2 mb-4'>
+          <div className='flex flex-col items-center md:items-start text-center md:text-left'>
+            <div className='inline-flex items-center gap-2 mb-4 justify-center md:justify-start'>
               <div className='w-8 h-8 bg-gradient-to-br from-emerald-500 via-green-500 to-teal-500 rounded-xl flex items-center justify-center shadow-lg'>
                 <span className='text-white text-lg'>💰</span>
               </div>
               <h2 className='text-xl font-bold bg-gradient-to-r from-emerald-600 via-green-500 to-teal-500 bg-clip-text text-transparent'>
-                ExpenseTracker AI
+                BudgetTracker AI
               </h2>
             </div>
-            <p className='text-gray-600 dark:text-gray-400 leading-relaxed max-w-sm'>
-              Intelligent financial management powered by AI. Track your
-              expenses, manage your budget, and gain insights into your spending
-              patterns.
+            <p className='text-gray-600 dark:text-gray-400 leading-relaxed max-w-sm mx-auto md:mx-0'>
+              Intelligent financial management powered by AI. Track your expenses, manage your budget, and gain insights into your spending patterns.
             </p>
           </div>
 
           {/* Navigation Links */}
-          <div className='text-center md:text-left'>
+          <div className='flex flex-col items-center md:items-start text-center md:text-left'>
             <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4'>
               Quick Links
             </h3>
@@ -56,7 +55,7 @@ const Footer = () => {
           </div>
 
           {/* Features */}
-          <div className='text-center md:text-left'>
+          <div className='flex flex-col items-center md:items-start text-center md:text-left'>
             <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4'>
               Features
             </h3>
@@ -90,15 +89,14 @@ const Footer = () => {
         <div className='flex flex-col md:flex-row justify-between items-center'>
           <div className='text-center md:text-left mb-4 md:mb-0'>
             <p className='text-gray-500 dark:text-gray-400 text-sm'>
-              © {new Date().getFullYear()} ExpenseTracker AI. All rights
-              reserved.
+              © {new Date().getFullYear()} BudgetTracker AI. All rights reserved.
             </p>
           </div>
 
           <div className='flex items-center gap-4'>
             <div className='inline-flex items-center gap-2 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-3 py-1 rounded-full text-xs font-medium'>
               <span className='w-1.5 h-1.5 bg-emerald-500 dark:bg-emerald-400 rounded-full animate-pulse'></span>
-              Made by Sahand
+              Made by Yash
             </div>
           </div>
         </div>

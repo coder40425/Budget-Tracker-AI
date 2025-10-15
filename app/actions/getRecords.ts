@@ -4,7 +4,7 @@ import { auth } from '@clerk/nextjs/server';
 import { Record } from '@/models/Record';
 
 async function getRecords(): Promise<{
-  records?: Record[];
+  records?: any[]; // plain objects
   error?: string;
 }> {
   const { userId } = await auth();
@@ -14,16 +14,26 @@ async function getRecords(): Promise<{
   }
 
   try {
-    // ✅ Connect to MongoDB
     await connectDB();
 
-    // Fetch recent 10 records for the authenticated user, sorted by `date` descending
     const records = await Record.find({ user: userId })
       .sort({ date: -1 })
       .limit(10)
       .lean();
 
-    return { records };
+    // Convert to plain objects suitable for passing to client components
+    const plainRecords = records.map((r) => ({
+      id: r._id.toString(),
+      title: r.title,
+      category: r.category || 'Other',
+      amount: r.amount,
+      date: r.date?.toISOString() || new Date().toISOString(),
+      user: r.user,
+      createdAt: r.createdAt?.toISOString() || new Date().toISOString(),
+      updatedAt: r.updatedAt?.toISOString() || new Date().toISOString(),
+    }));
+
+    return { records: plainRecords };
   } catch (error) {
     console.error('Error fetching records:', error);
     return { error: 'Database error' };
