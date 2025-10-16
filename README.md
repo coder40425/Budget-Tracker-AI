@@ -41,7 +41,7 @@ Track expenses, gain insights, and visualize trends with **Chart.js** – all in
 ![Dashboard](screenshots/dashboard.png)  
 
 ### 📊 Expense Analytics
-![Charts](screenshots/charts.png)  
+![AI Insights](screenshots/insights.png)  
 
 ---
 
