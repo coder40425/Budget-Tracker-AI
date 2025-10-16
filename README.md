@@ -34,8 +34,8 @@ Track expenses, gain insights, and visualize trends with **Chart.js** – all in
 ## 🖼 Screenshots
 
 ### 🔐 Authentication
-![Login Page](screenshots/login.png)  
-![Signup Page](screenshots/signup.png)  
+![Guest Page](screenshots/guest.png)  
+![LogIn/SignUp Page](screenshots/login.png)  
 
 ### 🏠 Dashboard
 ![Dashboard](screenshots/dashboard.png)  
