@@ -68,7 +68,13 @@ export async function addExpenseRecord(formData: FormData): Promise<RecordResult
       title: createdRecord.title,
       amount: createdRecord.amount,
       category: createdRecord.category || 'Other',
-      date: createdRecord.date ? createdRecord.date.toISOString() : date,
+      date:
+  createdRecord.date && createdRecord.date instanceof Date
+    ? createdRecord.date.toISOString()
+    : (typeof createdRecord.date === 'string'
+        ? createdRecord.date
+        : new Date().toISOString()),
+
     };
 
     revalidatePath('/');
