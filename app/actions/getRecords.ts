@@ -1,10 +1,11 @@
 'use server';
 import { connectDB } from '@/lib/db';
 import { auth } from '@clerk/nextjs/server';
+import { Record as RecordType } from '@/types/Record'; // import your interface
 import { Record } from '@/models/Record';
 
 async function getRecords(): Promise<{
-  records?: any[]; // plain objects
+  records?: RecordType[];
   error?: string;
 }> {
   const { userId } = await auth();
@@ -21,16 +22,15 @@ async function getRecords(): Promise<{
       .limit(10)
       .lean();
 
-    // Convert to plain objects suitable for passing to client components
-    const plainRecords = records.map((r) => ({
+    // Map to your interface type
+    const plainRecords: RecordType[] = records.map((r) => ({
       id: r._id.toString(),
       title: r.title,
       category: r.category || 'Other',
       amount: r.amount,
-      date: r.date?.toISOString() || new Date().toISOString(),
-      user: r.user,
-      createdAt: r.createdAt?.toISOString() || new Date().toISOString(),
-      updatedAt: r.updatedAt?.toISOString() || new Date().toISOString(),
+      date: r.date instanceof Date ? r.date.toISOString() : String(r.date),
+      userId: r.user,
+      createdAt: r.createdAt instanceof Date ? r.createdAt : new Date(r.createdAt),
     }));
 
     return { records: plainRecords };
