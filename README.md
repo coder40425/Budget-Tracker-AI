@@ -3,7 +3,7 @@
 A *student-built, AI-powered expense tracker* that helps you understand your spending patterns, categorize expenses intelligently, and manage budgets efficiently.  
 Track expenses, gain insights, and visualize trends with **Chart.js** – all in one place.
 
-🌐 *Live Demo*: [BudgetTracker AI]([https://your-live-demo-link.com](https://budget-tracker-ai-ys.vercel.app/)
+🌐 *Live Demo*: [BudgetTracker AI]([https://budget-tracker-ai-ys.vercel.app/])
 
 ---
 
