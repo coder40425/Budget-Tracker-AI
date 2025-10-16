@@ -17,7 +17,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className='sticky top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-600/50 shadow-lg shadow-gray-900/5 dark:shadow-black/30'>
+    <nav className='sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-b border-slate-200/60 dark:border-slate-700/60 shadow-lg shadow-slate-200/30 dark:shadow-slate-950/50'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-14 sm:h-16'>
           {/* Logo Section */}
@@ -27,12 +27,12 @@ export default function Navbar() {
               className='flex items-center gap-2 sm:gap-3 flex-shrink-0 group transition-all duration-300 hover:scale-105'
               onClick={closeMobileMenu}
             >
-              <div className='w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-gradient-to-br from-emerald-500 via-green-500 to-teal-500 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:rotate-3'>
+              <div className='w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-gradient-to-br from-blue-500 via-violet-500 to-purple-500 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:shadow-xl group-hover:shadow-violet-500/40 transition-all duration-300 group-hover:rotate-3'>
                 <span className='text-white text-xs sm:text-sm md:text-lg font-bold'>
                   💰
                 </span>
               </div>
-              <span className='text-sm sm:text-base md:text-lg lg:text-xl font-bold bg-gradient-to-r from-emerald-600 via-green-500 to-teal-500 bg-clip-text text-transparent'>
+              <span className='text-sm sm:text-base md:text-lg lg:text-xl font-bold bg-gradient-to-r from-blue-600 via-violet-600 to-purple-600 bg-clip-text text-transparent'>
                 <span className='hidden sm:inline'>BudgetTracker AI</span>
                 <span className='sm:hidden'>BudgetTracker</span>
               </span>
@@ -43,26 +43,26 @@ export default function Navbar() {
           <div className='hidden md:flex items-center space-x-1'>
             <Link
               href='/'
-              className='relative text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 group'
+              className='relative text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-blue-50/50 dark:hover:bg-blue-950/30 group'
             >
               <span className='relative z-10'>Home</span>
-              <div className='absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-green-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
+              <div className='absolute inset-0 bg-gradient-to-r from-blue-500/10 to-violet-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
             </Link>
 
             <Link
               href='/about'
-              className='relative text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 group'
+              className='relative text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-violet-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 group'
             >
               <span className='relative z-10'>About</span>
-              <div className='absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-green-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
+              <div className='absolute inset-0 bg-gradient-to-r from-violet-500/10 to-purple-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
             </Link>
 
             <Link
               href='/contact'
-              className='relative text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 group'
+              className='relative text-slate-700 dark:text-slate-300 hover:text-purple-600 dark:hover:text-purple-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-purple-50/50 dark:hover:bg-purple-950/30 group'
             >
               <span className='relative z-10'>Contact</span>
-              <div className='absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-green-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
+              <div className='absolute inset-0 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200'></div>
             </Link>
           </div>
 
@@ -77,7 +77,7 @@ export default function Navbar() {
             <div className='hidden sm:block'>
               <SignedOut>
                 <SignInButton>
-                  <button className='relative overflow-hidden bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 hover:from-emerald-600 hover:via-green-600 hover:to-teal-600 text-white px-3 sm:px-4 py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95'>
+                  <button className='relative overflow-hidden bg-gradient-to-r from-blue-500 via-violet-500 to-purple-500 hover:from-blue-600 hover:via-violet-600 hover:to-purple-600 text-white px-3 sm:px-4 py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm font-semibold shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-violet-500/40 transition-all duration-300 transform hover:scale-105 active:scale-95'>
                     <div className='relative z-10 flex items-center gap-1 sm:gap-2'>
                       <span>Sign In</span>
                       <svg
@@ -100,7 +100,7 @@ export default function Navbar() {
               </SignedOut>
 
               <SignedIn>
-                <div className='p-0.5 sm:p-1 rounded-lg sm:rounded-xl bg-gradient-to-r from-emerald-100/50 to-green-100/50 dark:from-emerald-900/20 dark:to-green-900/20 backdrop-blur-sm border border-emerald-200/30 dark:border-emerald-700/30'>
+                <div className='p-0.5 sm:p-1 rounded-lg sm:rounded-xl bg-gradient-to-br from-blue-100/50 to-violet-100/50 dark:from-blue-950/30 dark:to-violet-950/30 backdrop-blur-sm border border-blue-200/40 dark:border-blue-800/40'>
                   <UserButton
                     appearance={{
                       elements: {
@@ -117,7 +117,7 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMobileMenu}
-              className='md:hidden p-1.5 sm:p-2 rounded-lg sm:rounded-xl text-gray-600 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 transition-all duration-200 active:scale-95'
+              className='md:hidden p-1.5 sm:p-2 rounded-lg sm:rounded-xl text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50/50 dark:hover:bg-blue-950/30 transition-all duration-200 active:scale-95'
               aria-label='Toggle mobile menu'
             >
               <svg
@@ -156,11 +156,11 @@ export default function Navbar() {
               : 'max-h-0 opacity-0 overflow-hidden'
           }`}
         >
-          <div className='px-2 pt-2 pb-3 space-y-1 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-gray-200/50 dark:border-gray-600/50 mt-2 shadow-lg'>
+          <div className='px-2 pt-2 pb-3 space-y-1 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md rounded-xl border border-slate-200/60 dark:border-slate-700/60 mt-2 shadow-lg shadow-slate-200/50 dark:shadow-slate-950/50'>
             {/* Mobile Navigation Links */}
             <Link
               href='/'
-              className='flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 text-sm font-medium transition-all duration-200 active:scale-95'
+              className='flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50/50 dark:hover:bg-blue-950/30 text-sm font-medium transition-all duration-200 active:scale-95'
               onClick={closeMobileMenu}
             >
               <span className='text-base'>🏠</span>
@@ -168,7 +168,7 @@ export default function Navbar() {
             </Link>
             <Link
               href='/about'
-              className='flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 text-sm font-medium transition-all duration-200 active:scale-95'
+              className='flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-violet-400 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 text-sm font-medium transition-all duration-200 active:scale-95'
               onClick={closeMobileMenu}
             >
               <span className='text-base'>ℹ️</span>
@@ -176,7 +176,7 @@ export default function Navbar() {
             </Link>
             <Link
               href='/contact'
-              className='flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 text-sm font-medium transition-all duration-200 active:scale-95'
+              className='flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-700 dark:text-slate-300 hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/50 dark:hover:bg-purple-950/30 text-sm font-medium transition-all duration-200 active:scale-95'
               onClick={closeMobileMenu}
             >
               <span className='text-base'>📞</span>
@@ -184,11 +184,11 @@ export default function Navbar() {
             </Link>
 
             {/* Mobile Authentication */}
-            <div className='pt-3 border-t border-gray-200/50 dark:border-gray-600/50'>
+            <div className='pt-3 border-t border-slate-200/60 dark:border-slate-700/60'>
               <SignedOut>
                 <SignInButton>
                   <button
-                    className='w-full bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 hover:from-emerald-600 hover:via-green-600 hover:to-teal-600 text-white px-4 py-3 rounded-xl text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 active:scale-95'
+                    className='w-full bg-gradient-to-r from-blue-500 via-violet-500 to-purple-500 hover:from-blue-600 hover:via-violet-600 hover:to-purple-600 text-white px-4 py-3 rounded-xl text-sm font-semibold shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-violet-500/40 transition-all duration-300 flex items-center justify-center gap-2 active:scale-95'
                     onClick={closeMobileMenu}
                   >
                     <span>Sign In</span>
@@ -210,7 +210,7 @@ export default function Navbar() {
               </SignedOut>
 
               <SignedIn>
-                <div className='flex items-center justify-center p-3 rounded-xl bg-gradient-to-r from-emerald-100/50 to-green-100/50 dark:from-emerald-900/20 dark:to-green-900/20 backdrop-blur-sm border border-emerald-200/30 dark:border-emerald-700/30'>
+                <div className='flex items-center justify-center p-3 rounded-xl bg-gradient-to-br from-blue-100/50 to-violet-100/50 dark:from-blue-950/30 dark:to-violet-950/30 backdrop-blur-sm border border-blue-200/40 dark:border-blue-800/40'>
                   <UserButton
                     appearance={{
                       elements: {
