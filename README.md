@@ -1,7 +1,7 @@
 # 💸 BudgetTracker AI
 
-A *student-built, AI-powered expense tracker* that helps you understand your spending patterns, categorize expenses intelligently, and manage budgets efficiently.  
-Track expenses, gain insights, and visualize trends with **Chart.js** – all in one place.
+*Built an AI-powered expense tracker* that helps you understand your spending patterns, categorize expenses intelligently, and manage budgets efficiently.  
+Track expenses, gain insights, and visualize trends with *Chart.js* – all in one place.
 
 🌐 *Live Demo*: [BudgetTracker AI](https://budget-tracker-ai-ys.vercel.app/)
 
@@ -82,8 +82,8 @@ Track expenses, gain insights, and visualize trends with **Chart.js** – all in
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/sahandghavidel/next-expense-tracker-ai.git
-   cd next-expense-tracker-ai
+   git clone https://github.com/coder40425/Budget-Tracker-AI.git
+   cd my-app
    ```
 
 2. **Install dependencies**
@@ -101,7 +101,7 @@ Track expenses, gain insights, and visualize trends with **Chart.js** – all in
 
    ```env
    # Database
-   DATABASE_URL="your-neon-database-url"
+   MONGODB_URI="your-mongodb-database-url"
 
    # Clerk Authentication
    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="your-clerk-publishable-key"
@@ -117,14 +117,7 @@ Track expenses, gain insights, and visualize trends with **Chart.js** – all in
    NEXT_PUBLIC_APP_URL="http://localhost:3000"
    ```
 
-4. **Set up the database**
-
-   ```bash
-   npx prisma generate
-   npx prisma db push
-   ```
-
-5. **Run the development server**
+4. **Run the development server**
 
    ```bash
    npm run dev
@@ -134,7 +127,7 @@ Track expenses, gain insights, and visualize trends with **Chart.js** – all in
    pnpm dev
    ```
 
-6. **Open your browser**
+5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 👤 Author  
